@@ -1,10 +1,15 @@
-#!/usr/bin/env bash
-set -e
-# update instance
-yum -y update
+#!/bin/bash
 
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | bash
+echo "Configuration"
 
-. ~/.nvm/nvm.sh
+export NODE_ENV=production
 
-nvm install node
+BASE_DIR=/home/ec2-user/
+APPLICATION_DIRECTORY=$BASE_DIR/aws-devops
+
+echo "cd"
+
+cd "$APPLICATION_DIRECTORY"
+
+#sequelize db:create && sequelize db:migrate
+npm install
