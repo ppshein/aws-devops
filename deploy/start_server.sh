@@ -15,4 +15,5 @@ cd "$APPLICATION_DIRECTORY"
 npm install
 
 # actually start the server
-npm start
+echo "Starting"
+pm2 start bin/www -n www -i 0

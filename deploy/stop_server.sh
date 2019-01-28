@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "Server is stopped"
+echo "pm2 stop www"
+pm2 stop www
