@@ -12,6 +12,7 @@ echo "cd"
 cd "$APPLICATION_DIRECTORY"
 
 #sequelize db:create && sequelize db:migrate
+npm install
 
 # actually start the server
 npm start
